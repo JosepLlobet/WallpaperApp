@@ -1,0 +1,17 @@
+/home/josep/WallpaperApp/bin/Debug/net8.0/WallpaperApp
+/home/josep/WallpaperApp/bin/Debug/net8.0/WallpaperApp.deps.json
+/home/josep/WallpaperApp/bin/Debug/net8.0/WallpaperApp.runtimeconfig.json
+/home/josep/WallpaperApp/bin/Debug/net8.0/WallpaperApp.dll
+/home/josep/WallpaperApp/bin/Debug/net8.0/WallpaperApp.pdb
+/home/josep/WallpaperApp/obj/Debug/net8.0/WallpaperApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/josep/WallpaperApp/obj/Debug/net8.0/WallpaperApp.AssemblyInfoInputs.cache
+/home/josep/WallpaperApp/obj/Debug/net8.0/WallpaperApp.AssemblyInfo.cs
+/home/josep/WallpaperApp/obj/Debug/net8.0/WallpaperApp.csproj.CoreCompileInputs.cache
+/home/josep/WallpaperApp/obj/Debug/net8.0/WallpaperApp.dll
+/home/josep/WallpaperApp/obj/Debug/net8.0/refint/WallpaperApp.dll
+/home/josep/WallpaperApp/obj/Debug/net8.0/WallpaperApp.pdb
+/home/josep/WallpaperApp/obj/Debug/net8.0/WallpaperApp.genruntimeconfig.cache
+/home/josep/WallpaperApp/obj/Debug/net8.0/ref/WallpaperApp.dll
+/home/josep/WallpaperApp/bin/Debug/net8.0/HtmlAgilityPack.dll
+/home/josep/WallpaperApp/obj/Debug/net8.0/WallpaperApp.csproj.AssemblyReference.cache
+/home/josep/WallpaperApp/obj/Debug/net8.0/Wallpape.6F9014EC.Up2Date

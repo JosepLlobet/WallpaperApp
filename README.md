@@ -4,7 +4,7 @@ Hi, this is a linux (tested on manjaro) application that download a random video
 ## Needed
 ```console
 sudo pacman install xwinwrap
-sudo pacman install xdotool  
+sudo pacman install wmctrl  
 ```
 xwinwrap will set the video as wallpaper
-xdotool will give us the id of our desktop
+wmctrl will give us the id of our desktop (Already installed in Manjaro GNOME)

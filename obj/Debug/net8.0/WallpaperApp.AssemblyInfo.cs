@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WallpaperApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1eeb14e1a1033aaf239637802dbeea334ec9abbb")]
 [assembly: System.Reflection.AssemblyProductAttribute("WallpaperApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WallpaperApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

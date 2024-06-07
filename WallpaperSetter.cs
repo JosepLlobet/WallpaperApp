@@ -10,7 +10,6 @@ namespace WallpaperApp
 
             if (!string.IsNullOrEmpty(wid))
             {
-                wid = "0xa60000a";
                 var processInfo = new ProcessStartInfo
                 {
                     FileName = "sh",
@@ -31,22 +30,44 @@ namespace WallpaperApp
 
         private string GetFirstDesktopWindowId()
         {
-            var processInfo = new ProcessStartInfo
+            // Configuración del proceso
+            ProcessStartInfo processStartInfo = new ProcessStartInfo
             {
-                FileName = "sh",
-                Arguments = "-c \"xdotool search --name 'Desktop' | head -n 1\"",
-                RedirectStandardOutput = true,
+                FileName = "wmctrl",
+                Arguments = "-l | grep 'Desktop' | awk '{print $1}'",
                 UseShellExecute = false,
-                CreateNoWindow = true
+                RedirectStandardOutput = true
             };
 
-            var process = new Process { StartInfo = processInfo };
-            process.Start();
+            Process process = new Process
+            {
+                StartInfo = processStartInfo
+            };
 
-            string result = process.StandardOutput.ReadToEnd().Trim();
-            process.WaitForExit();
+            try
+            {
+                process.Start();
 
-            return result;
-        }
+                // Leer la salida del comando
+                string output = process.StandardOutput.ReadToEnd();                
+                process.WaitForExit();
+
+                Console.WriteLine("Salida:");
+                Console.WriteLine(output);
+
+                string[] results = output.Split(" ");
+
+                return results[0];
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ocurrió un error al ejecutar el comando:");
+                Console.WriteLine(ex.Message);
+
+                return "";
+            }
+
+            return "";
+        }        
     }
 }

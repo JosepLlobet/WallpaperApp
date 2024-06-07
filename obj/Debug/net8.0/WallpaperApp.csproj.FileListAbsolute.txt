@@ -15,3 +15,4 @@
 /home/josep/WallpaperApp/bin/Debug/net8.0/HtmlAgilityPack.dll
 /home/josep/WallpaperApp/obj/Debug/net8.0/WallpaperApp.csproj.AssemblyReference.cache
 /home/josep/WallpaperApp/obj/Debug/net8.0/Wallpape.6F9014EC.Up2Date
+/home/josep/WallpaperApp/obj/Debug/net8.0/WallpaperApp.sourcelink.json

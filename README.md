@@ -3,7 +3,7 @@ Hi, this is a linux (tested on manjaro) application that download a random video
 
 It is focused on downloading Anime Wallpapers, but only depends on the Webside.
 
-## Needed
+## Needed ARCH LINUX
 ```console
 sudo pacman install xwinwrap
 ```

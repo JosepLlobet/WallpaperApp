@@ -6,7 +6,5 @@ It is focused on downloading Anime Wallpapers, but only depends on the Webside.
 ## Needed
 ```console
 sudo pacman install xwinwrap
-sudo pacman install wmctrl  
 ```
 xwinwrap will set the video as wallpaper
-wmctrl will give us the id of our desktop (Already installed in Manjaro GNOME)

@@ -16,6 +16,12 @@ class Program
         if (videoUrls.Count > 0)
         {
             string downloadFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "DownloadedVideos");
+            //delete files in folder
+            if (Directory.Exists(downloadFolder))
+            {
+                Directory.Delete(downloadFolder, true);
+            }
+
             Directory.CreateDirectory(downloadFolder);
 
             var videoPath = await videoDownloader.DownloadRandomVideoAsync(videoUrls, downloadFolder);

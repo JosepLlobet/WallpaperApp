@@ -6,26 +6,20 @@ namespace WallpaperApp
     {
         public void SetVideoAsWallpaper(string videoPath)
         {
-            string wid = GetFirstDesktopWindowId();
-
-            if (!string.IsNullOrEmpty(wid))
+            string args = $"-c \"xwinwrap -d -st -ni -s -nf -b -un -argb -fs -fdt -- mpv --hwdec=vdpau --vo=vdpau --loop --mute=yes --stop-screensaver=no -wid WID {videoPath}\"";
+            
+            var processInfo = new ProcessStartInfo
             {
-                var processInfo = new ProcessStartInfo
-                {
-                    FileName = "sh",
-                    Arguments = $"-c \"xwinwrap -fs -fdt -ni -b -nf -un -o 1.0 -debug -- mpv -wid WID --loop --no-audio {videoPath}\"",
-                    RedirectStandardOutput = true,
-                    UseShellExecute = false,
-                    CreateNoWindow = true
-                };
+                FileName = "sh",
+                //Arguments = $"-c \"xwinwrap -fs -fdt -ni -b -nf -un -o 1.0 -debug -- mpv -wid WID --loop --no-audio {videoPath}\"",
+                Arguments = args,
+                RedirectStandardOutput = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            };
 
-                var process = new Process { StartInfo = processInfo };
-                process.Start();
-            }
-            else
-            {
-                Console.WriteLine("No se pudo encontrar el ID de la ventana del escritorio.");
-            }
+            var process = new Process { StartInfo = processInfo };
+            process.Start();
         }
 
         private string GetFirstDesktopWindowId()
